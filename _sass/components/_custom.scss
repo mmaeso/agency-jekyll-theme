@@ -1,0 +1,16 @@
+//Custom classes
+
+.renovations{
+ background-image: url("#{$renovations-image}");
+ box-shadow: 1px .5px 5px rgba(0,0,0,0.5);
+}
+
+.selling{
+ background-image: url("#{$selling-image}");
+ box-shadow: 1px .5px 5px rgba(0,0,0,0.5);
+}
+
+.buying{
+ background-image: url("#{$buying-image}");
+ box-shadow: 1px .5px 5px rgba(0,0,0,0.5);
+}

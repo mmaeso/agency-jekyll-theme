@@ -13,6 +13,9 @@ $black: {{ site.data.style.black | default: "#000" }} !default;
 // Custom Images
 $header-image: "{{ site.data.style.header-image }}";
 $contact-image: "{{ site.data.style.contact-image }}";
+$renovations-image: "{{ site.data.style.renovations-image }}";
+$selling-image: "{{ site.data.style.selling-image }}";
+$buying-image: "{{ site.data.style.buying-image }}";
 
 // Global CSS
 @import "base/page.scss";
@@ -21,6 +24,7 @@ $contact-image: "{{ site.data.style.contact-image }}";
 @import "components/buttons.scss";
 @import "components/navbar.scss";
 @import "components/client-scroll.scss";
+@import "components/custom.scss";
 
 // Layout
 @import "layout/masthead.scss";
