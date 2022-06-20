@@ -1,24 +1,24 @@
 <!-- About -->
-<section class="bg-light page-section" id="{{ site.data.sitetext[site.locale].compra.section | default: "about" }}">
+<section class="page-section" id="{{ site.data.sitetext[site.locale].financiacion.section | default: "about" }}">
   <div class="row text-center">
   <div class="col-lg-12" style="padding-bottom: 20px;">
     <span class="fa-stack fa-4x">
       <i class="fas fa-circle fa-stack-2x text-primary"></i>
-      <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+      <i class="fas fa-coins fa-stack-1x fa-inverse"></i>
     </span>
   </div>
 </div>
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].compra.title | default: "About Us" }}</h2>
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].compra.text | default: "" }}</h3>
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].financiacion.title | default: "About Us" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].financiacion.text | default: "" | markdownify }}</h3>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
         <div class="large text-muted">
-          {% capture section_body %}{% include compra.md %}{% endcapture %}
+          {% capture section_body %}{% include financiacion.md %}{% endcapture %}         
           {{ section_body | markdownify }}
         </div>
       </div>
